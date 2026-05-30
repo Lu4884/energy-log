@@ -30,7 +30,7 @@ export function exportCSV(records: EnergyRecord[]): void {
     csvEscape(r.note),
   ])
   const csv = [headers.join(','), ...rows.map((r) => r.join(','))].join('\n')
-  downloadBlob('\uFEFF' + csv, `能量记录_${formatTimestamp(Date.now()).replace(/[: ]/g, '_')}.csv`, 'text/csv')
+  downloadBlob(new Blob(['\uFEFF' + csv], { type: 'text/csv' }), `能量记录_${formatTimestamp(Date.now()).replace(/[: ]/g, '_')}.csv`)
 }
 
 export async function exportExcel(records: EnergyRecord[]): Promise<void> {
@@ -60,8 +60,8 @@ export function exportBackup(records: EnergyRecord[]): void {
   downloadBlob(new Blob([json], { type: 'application/json' }), `能量流水账_备份_${formatTimestamp(Date.now()).replace(/[: ]/g, '_')}.json`)
 }
 
-function downloadBlob(blob: Blob, filename: string, type?: string) {
-  const url = URL.createObjectURL(type ? new Blob([blob], { type }) : blob)
+function downloadBlob(blob: Blob, filename: string) {
+  const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
   a.download = filename

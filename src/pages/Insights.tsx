@@ -8,7 +8,7 @@ import DonutChart from '../components/DonutChart'
 import RankList from '../components/RankList'
 import styles from './Insights.module.css'
 
-function getActivityRank(records: { activity: string; activityTag: string; value: number }[]): (TagRank & { tag: string })[] {
+function getActivityRank(records: { activity: string; activityTag: string; value: number }[]): (TagRank & { tags: string[] })[] {
   const map: Record<string, { sum: number; count: number; tags: string[] }> = {}
   for (const r of records) {
     const key = r.activity || '(未填写)'
