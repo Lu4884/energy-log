@@ -1,0 +1,72 @@
+.wrap {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: var(--font-title);
+  color: var(--color-text-secondary);
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.rank {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-weak);
+  flex-shrink: 0;
+}
+
+.label {
+  width: 56px;
+  font-size: 13px;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.barTrack {
+  flex: 1;
+  height: 8px;
+  background: var(--color-bg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 4px;
+  min-width: 4px;
+  transition: width 0.5s ease;
+}
+
+.value {
+  width: 36px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.positive { color: var(--color-positive); }
+.negative { color: var(--color-negative); }
+
+.count {
+  width: 30px;
+  font-size: 11px;
+  color: var(--color-text-weak);
+  text-align: right;
+  flex-shrink: 0;
+}

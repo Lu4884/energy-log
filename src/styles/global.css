@@ -1,0 +1,75 @@
+:root {
+  --color-primary: #7EC8A3;
+  --color-primary-dark: #5BA882;
+  --color-primary-light: #E8F5EF;
+  --color-positive: #7EC8A3;
+  --color-neutral: #A0AEC0;
+  --color-negative: #F4A0A0;
+  --color-bg: #F7F9FC;
+  --color-card: #FFFFFF;
+  --color-text: #2D3748;
+  --color-text-secondary: #718096;
+  --color-text-weak: #A0AEC0;
+  --color-border: #E2E8F0;
+  --color-divider: #EDF2F7;
+
+  --font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-title: 600;
+  --font-body: 400;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-button: 0 2px 8px rgba(126, 200, 163, 0.3);
+
+  --nav-height: 56px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input, textarea {
+  font-family: inherit;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

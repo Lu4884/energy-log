@@ -1,0 +1,149 @@
+.page {
+  padding: 20px 16px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: var(--font-title);
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: var(--font-title);
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  margin-bottom: 8px;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  min-height: 44px;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.menuItem:active {
+  background: var(--color-primary-light);
+}
+
+.menuLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menuIcon {
+  color: var(--color-primary);
+}
+
+.menuArrow {
+  color: var(--color-text-weak);
+}
+
+.stats {
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  padding: 8px 0;
+}
+
+.version {
+  text-align: center;
+  color: var(--color-text-weak);
+  font-size: 12px;
+  padding: 24px 0;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--color-text);
+  color: #fff;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  z-index: 200;
+  animation: toastIn 0.3s ease;
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Guide pages */
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  color: var(--color-primary);
+  font-size: 15px;
+  padding: 4px 0;
+  margin-bottom: 16px;
+}
+
+.guideTitle {
+  font-size: 20px;
+  font-weight: var(--font-title);
+  margin-bottom: 20px;
+}
+
+.guideContent {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.guideContent h3 {
+  font-size: 15px;
+  font-weight: var(--font-title);
+  margin: 16px 0 8px;
+  color: var(--color-primary-dark);
+}
+
+.guideContent h3:first-child {
+  margin-top: 0;
+}
+
+.guideContent p {
+  margin-bottom: 8px;
+}
+
+.guideContent ul,
+.guideContent ol {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.guideContent li {
+  margin-bottom: 4px;
+}

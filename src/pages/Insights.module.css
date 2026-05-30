@@ -1,0 +1,136 @@
+.page {
+  padding: 20px 16px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: var(--font-title);
+  margin-bottom: 20px;
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: var(--font-title);
+  color: var(--color-text-secondary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 40px 0;
+  color: var(--color-text-weak);
+  font-size: 15px;
+}
+
+.emptyEmoji {
+  font-size: 40px;
+}
+
+/* SOS */
+.sosCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  background: #FFF5F5;
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #C53030;
+  line-height: 1.6;
+}
+
+/* Tabs */
+.tabSwitch {
+  display: flex;
+  gap: 4px;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+}
+
+.tab {
+  padding: 4px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  background: none;
+  color: var(--color-text-secondary);
+  transition: all 0.2s;
+}
+
+.tabActive {
+  background: var(--color-card);
+  color: var(--color-text);
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+
+/* Ratio stats */
+.ratioStats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-divider);
+}
+
+.ratioItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.ratioPos {
+  font-size: 20px;
+  font-weight: var(--font-title);
+  color: var(--color-positive);
+}
+
+.ratioNeu {
+  font-size: 20px;
+  font-weight: var(--font-title);
+  color: var(--color-neutral);
+}
+
+.ratioNeg {
+  font-size: 20px;
+  font-weight: var(--font-title);
+  color: var(--color-negative);
+}
+
+.ratioLabel {
+  font-size: 12px;
+  color: var(--color-text-weak);
+}
+
+/* Report */
+.report {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reportLine {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text);
+  padding: 8px 12px;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+}

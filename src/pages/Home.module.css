@@ -1,0 +1,215 @@
+.page {
+  padding: 20px 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: var(--font-title);
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: var(--font-title);
+  color: var(--color-text-secondary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.energyOverview {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.energyItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+  padding: 12px 8px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+}
+
+.energyEmoji {
+  font-size: 26px;
+}
+
+.energyCount {
+  font-size: 26px;
+  font-weight: var(--font-title);
+}
+
+.energyLabel {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.positive { color: var(--color-positive); }
+.neutral { color: var(--color-neutral); }
+.negative { color: var(--color-negative); }
+
+.netEnergy {
+  text-align: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-divider);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.netValue {
+  font-size: 18px;
+  font-weight: var(--font-title);
+  margin-left: 2px;
+}
+
+.trendPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.recordCount {
+  font-size: 12px;
+  color: var(--color-text-weak);
+}
+
+.recordItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.recordItem:last-child {
+  border-bottom: none;
+}
+
+.recordIcon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.recordInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.recordActivity {
+  font-size: 15px;
+  font-weight: var(--font-title);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recordMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 3px;
+}
+
+.tagMini {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text-weak);
+}
+
+.noteText {
+  font-size: 11px;
+  color: var(--color-text-weak);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100px;
+}
+
+.recordTime {
+  font-size: 12px;
+  color: var(--color-text-weak);
+  flex-shrink: 0;
+}
+
+.streak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.streakText {
+  font-size: 15px;
+}
+
+.streakCount {
+  font-size: 28px;
+  font-weight: var(--font-title);
+  color: var(--color-primary);
+}
+
+.streakEncourage {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--color-primary);
+}
+
+.emptyHint {
+  text-align: center;
+  color: var(--color-text-weak);
+  padding: 24px 0;
+  font-size: 14px;
+}
+
+.valMini {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-weight: 500;
+}
+
+.showAllBtn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 500;
+}
