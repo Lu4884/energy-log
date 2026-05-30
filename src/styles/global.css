@@ -24,7 +24,7 @@
   --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-button: 0 2px 8px rgba(126, 200, 163, 0.3);
 
-  --nav-height: 56px;
+  --nav-height: 64px;
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
 
