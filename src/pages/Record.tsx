@@ -143,18 +143,39 @@ export default function Record() {
 
         <div className={styles.valueRow}>
           <span className={styles.valueLabel}>能量强度：</span>
-          <input
-            type="number"
-            className={styles.valueInput}
-            min={energy === '-' || (editingId && editForm?.energy === '-') ? -5 : 0}
-            max={5}
-            value={editingId ? editForm?.value ?? 0 : value}
-            onChange={(e) => {
-              const n = parseFloat(e.target.value) || 0
-              if (editingId && editForm) setEditForm({ ...editForm, value: n })
-              else setValue(n)
+          <button
+            className={styles.stepperBtn}
+            onClick={() => {
+              const min = (editingId && editForm?.energy === '-') || energy === '-' ? -5 : 1
+              if (editingId && editForm) {
+                const newVal = Math.max(min, (editForm.value ?? 1) - 1)
+                setEditForm({ ...editForm, value: newVal })
+              } else {
+                setValue(Math.max(min, value - 1))
+              }
             }}
-          />
+            disabled={editingId ? (editForm?.energy ?? '0') === '0' : energy === '0'}
+          >
+            −
+          </button>
+          <span className={styles.stepperValue}>
+            {editingId ? (editForm?.energy === '0' ? 0 : (editForm?.value ?? 0)) : (energy === '0' ? 0 : value)}
+          </span>
+          <button
+            className={styles.stepperBtn}
+            onClick={() => {
+              const max = (editingId && editForm?.energy === '-') || energy === '-' ? -1 : 5
+              if (editingId && editForm) {
+                const newVal = Math.min(max, (editForm.value ?? 1) + 1)
+                setEditForm({ ...editForm, value: newVal })
+              } else {
+                setValue(Math.min(max, value + 1))
+              }
+            }}
+            disabled={editingId ? (editForm?.energy ?? '0') === '0' : energy === '0'}
+          >
+            +
+          </button>
         </div>
 
         <input
